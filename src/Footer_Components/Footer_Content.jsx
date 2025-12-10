@@ -11,7 +11,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
 import DescriptionIcon from "@mui/icons-material/Description";
-import logo from "../assets/AlAura.png";
+import logo from "../assets/ALAura.png";
 
 const Footer_Content = () => {
   return (

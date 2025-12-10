@@ -14,7 +14,7 @@ import DialogContent from "@mui/material/DialogContent";
 import TextField from "@mui/material/TextField";
 import { Link, useLocation } from "react-router-dom";
 
-import logo from "../assets/AlAura.png";
+import logo from "../assets/ALAura.png";
 
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";

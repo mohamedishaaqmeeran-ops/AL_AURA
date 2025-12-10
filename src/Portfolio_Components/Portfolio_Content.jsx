@@ -8,7 +8,7 @@ import JP from "../assets/JP.jpg"
 import JV from "../assets/JV.jpg"
 import MW from "../assets/modern.png"
 import FW from "../assets/FW.png"
-import ZP from "../assets/ZP.pNg"
+import ZP from "../assets/ZP.png"
 
 const projects = [
   { id: 1, title: "LOGO", description: "We have designed logo for Jotech Technical Service, Dubai, UAE", image: JL },

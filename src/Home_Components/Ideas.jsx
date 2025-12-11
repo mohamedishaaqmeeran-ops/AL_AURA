@@ -63,7 +63,7 @@ function Ideas() {
       xl={6} 
       data-aos="fade-up"
     >
-      <Card sx={{ backgroundColor:  "rgba(228, 221, 3, 0.7)", borderRadius: 3, p: 2, height: {xs:250,sm:200} ,width:{lg:450,xs:"90%",sm:"54vw"},  backdropFilter: "blur(10px)", // blur effect
+      <Card sx={{ backgroundColor:  "rgba(228, 221, 3, 0.7)", borderRadius: 3, p: 2, height: {xs:268,sm:200} ,width:{lg:450,xs:"90%",sm:"54vw"},  backdropFilter: "blur(10px)", // blur effect
                 borderRadius: 3,
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {
@@ -79,7 +79,7 @@ function Ideas() {
           </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1,pt:5 }}>
             {idea.tags.map((tag, index) => (
-              <Chip key={index} label={tag} size="small" sx={{ backgroundColor: "#2d013bff", color: "#fff" }} />
+              <Chip key={index} label={tag} size="small" sx={{ backgroundColor: "#2d013bff", color: "#fff",mx:"auto" }} />
             ))}
           </Box>
         </CardContent>

@@ -67,7 +67,7 @@ const Footer_Content = () => {
               { text: "About", icon: <InfoIcon />, link: "/about" },
               { text: "Services", icon: <BuildIcon />, link: "/services" },
               { text: "Portfolio", icon: <WorkIcon />, link: "/portfolio" },
-              { text: "Contact", icon: <PhoneIcon />, link: "/contact" },
+              { text: "Contact", icon: <PhoneIcon />, link: "/contactus" },
             ].map((item, i) => (
               <Link
                 key={i}

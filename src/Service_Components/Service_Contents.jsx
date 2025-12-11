@@ -155,7 +155,7 @@ export default function Service_Contents() {
               border: "none",
             },
           }}
-          onClick={() => navigate("/contactUS")}
+          onClick={() => navigate("/Contactus")}
         >
           Contact Us
         </Button>

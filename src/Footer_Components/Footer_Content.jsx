@@ -12,6 +12,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import PrivacyTipIcon from "@mui/icons-material/PrivacyTip";
 import DescriptionIcon from "@mui/icons-material/Description";
 import logo from "../assets/ALAura.png";
+import { Link as RouterLink } from "react-router-dom";
 
 const Footer_Content = () => {
   return (
@@ -60,7 +61,7 @@ const Footer_Content = () => {
 
           {/* Quick Links */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" mb={2} fontWeight="bold">Quick Links</Typography>
+            <Typography variant="h6" mb={2} fontWeight="bold" textAlign={"left"}>Quick Links</Typography>
             {[
               { text: "Home", icon: <HomeIcon />, link: "/" },
               { text: "About", icon: <InfoIcon />, link: "/about" },
@@ -82,7 +83,7 @@ const Footer_Content = () => {
 
           {/* Customer Support */}
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" mb={2} fontWeight="bold">Customer Support</Typography>
+            <Typography variant="h6" mb={2} fontWeight="bold" textAlign={"left"}>Customer Support</Typography>
             {[
               { text: "alaura.web@gmail.com", icon: <EmailIcon />, href:"mailto:alaura.web@gmail.com" },
               { text: "+91 95857 78929", icon: <PhoneIcon />,  href:"tel:+919585778929" },
@@ -101,17 +102,27 @@ const Footer_Content = () => {
           </Grid>
 
           {/* Legal */}
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" mb={2} fontWeight="bold">Legal</Typography>
-            <Link href="/PrivacyPolicy"  sx={{ display: "flex", alignItems: "center", gap: 1, mb: .7 ,color:"#e4dd03",textDecoration: "none",
-      "&:hover": { color: "#fff" }}}>
-              <PrivacyTipIcon fontSize="small" /> Privacy Policy
-            </Link>
-            <Link href="/DisclaimerPolicy"  sx={{ display: "flex", alignItems: "center", gap: 1,color:"#e4dd03" ,textDecoration: "none",
-      "&:hover": { color: "#fff" }}}>
-              <DescriptionIcon fontSize="small" /> Disclaimer
-            </Link>
-          </Grid>
+         <Grid item xs={12} sm={6} md={3}>
+  <Typography variant="h6" mb={2} fontWeight="bold" textAlign={"left"}>Legal</Typography>
+
+  <Link
+    component={RouterLink}
+    to="/PrivacyPolicy"
+    sx={{ display: "flex", alignItems: "center", gap: 1, mb: .7, color:"#e4dd03", textDecoration: "none",
+          "&:hover": { color: "#fff" }}}
+  >
+    <PrivacyTipIcon fontSize="small" /> Privacy Policy
+  </Link>
+
+  <Link
+    component={RouterLink}
+    to="/DisclaimerPolicy"
+    sx={{ display: "flex", alignItems: "center", gap: 1, color:"#e4dd03", textDecoration: "none",
+          "&:hover": { color: "#fff" }}}
+  >
+    <DescriptionIcon fontSize="small" /> Disclaimer
+  </Link>
+</Grid>
         </Grid>
 
         {/* Social Icons */}

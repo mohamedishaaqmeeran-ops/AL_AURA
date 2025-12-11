@@ -47,7 +47,7 @@ const Footer_Content = () => {
 >
 
 
-        <Grid container spacing={{ xs: 4, md: 8, lg:26,xl:29,sm:8 }}>
+        <Grid container spacing={{ xs: 4, md: 8, lg:25,xl:29,sm:8 }}>
           {/* Logo & Brand */}
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" alignItems="center" >
@@ -103,11 +103,11 @@ const Footer_Content = () => {
           {/* Legal */}
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" mb={2} fontWeight="bold">Legal</Typography>
-            <Link href="/privacy policy"  sx={{ display: "flex", alignItems: "center", gap: 1, mb: .7 ,color:"#e4dd03",textDecoration: "none",
+            <Link href="/PrivacyPolicy"  sx={{ display: "flex", alignItems: "center", gap: 1, mb: .7 ,color:"#e4dd03",textDecoration: "none",
       "&:hover": { color: "#fff" }}}>
               <PrivacyTipIcon fontSize="small" /> Privacy Policy
             </Link>
-            <Link href="/disclaimer policy"  sx={{ display: "flex", alignItems: "center", gap: 1,color:"#e4dd03" ,textDecoration: "none",
+            <Link href="/DisclaimerPolicy"  sx={{ display: "flex", alignItems: "center", gap: 1,color:"#e4dd03" ,textDecoration: "none",
       "&:hover": { color: "#fff" }}}>
               <DescriptionIcon fontSize="small" /> Disclaimer
             </Link>

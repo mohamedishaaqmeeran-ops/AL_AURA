@@ -26,8 +26,8 @@ function App() {
             <Route path="/Aboutus" element={<Aboutus/>} />
             <Route path="/Portfolio" element={<Portfolio/>} />
             <Route path="/Contactus" element={<Contact/>} />
-             <Route path="/Privacy Policy" element={<Privacy/>} />
-            <Route path="/Disclaimer Policy" element={<Disclaimer/>} />
+             <Route path="/PrivacyPolicy" element={<Privacy/>} />
+            <Route path="/DisclaimerPolicy" element={<Disclaimer/>} />
         </Routes>
       </Router>
       <PhoneButton/>

@@ -47,7 +47,7 @@ const Footer_Content = () => {
 >
 
 
-        <Grid container spacing={{ xs: 4, md: 10, lg:26,xl:30,sm:3 }}>
+        <Grid container spacing={{ xs: 4, md: 8, lg:26,xl:29,sm:8 }}>
           {/* Logo & Brand */}
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" alignItems="center" >

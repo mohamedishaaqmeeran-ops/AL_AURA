@@ -69,15 +69,22 @@ const Footer_Content = () => {
               { text: "Portfolio", icon: <WorkIcon />, link: "/portfolio" },
               { text: "Contact", icon: <PhoneIcon />, link: "/contactus" },
             ].map((item, i) => (
-              <Link
-                key={i}
-                href={item.link}
-               
-                sx={{textDecoration: "none",
-      "&:hover": { color: "#fff" }, display: "flex", alignItems: "center", gap: 1, color: "#e4dd03", mb: .7 }}
-              >
-                {item.icon} {item.text}
-              </Link>
+             <Link
+  key={i}
+  component={RouterLink}
+  to={item.link}
+  sx={{
+    textDecoration: "none",
+    "&:hover": { color: "#fff" },
+    display: "flex",
+    alignItems: "center",
+    gap: 1,
+    color: "#e4dd03",
+    mb: .7
+  }}
+>
+  {item.icon} {item.text}
+</Link>
             ))}
           </Grid>
 

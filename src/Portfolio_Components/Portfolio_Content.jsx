@@ -15,7 +15,7 @@ const projects = [
   { id: 2, title: "COMPANY PROFILE", description: "We have designed company profile document for Jotech Technical Service, Dubai, UAE", image: JP },
   { id: 3, title: "VISITING CARD", description: "We have designed company visiting card for Jotech Technical Service, Dubai, UAE", image: JV },
   { id: 4, title: "NEW MODERN WEBSITE", description: "Hosted live website for New Modern Computers", image: MW },
-  { id: 5, title: "SOCIAL MEDIA POST", description: "Designed a post for Zain Homemade cakes.", image: ZP },
+  { id: 5, title: "SOCIAL MEDIA POST", description: "Designed a post for Zain Homemade cakes for Christmas", image: ZP },
   { id: 6, title: "FORTURA TECH WEBSITE", description: "Hosted website for Fortura tech", image: FW },
 ];
 
@@ -42,45 +42,62 @@ const Portfolio = () => {
         My Projects
       </Typography>
 
-      <Grid container columnSpacing={{ xs: 11, sm: 5, md: 26, lg: 11 }} rowSpacing={{ xs: 5, sm: 8 }} mt={10}>
-        {projects.map((project) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
-            key={project.id}
-            data-aos="fade-up"
+    <Grid
+  container
+  columnSpacing={{ xs: 2, sm: 5, md: 26, lg: 11 }} // smaller spacing for iPhone
+  rowSpacing={{ xs: 5, sm: 8 }}
+  mt={{ xs: 6, sm: 10 }}
+>
+  {projects.map((project) => (
+    <Grid
+      item
+      xs={12}  // full width on iPhone
+      sm={6}
+      md={4}
+      key={project.id}
+      data-aos="fade-up"
+      sx={{ display: "flex", justifyContent: "center" }} // center cards on iPhone
+    >
+      <Card
+        sx={{
+          width: { xs: "90%", sm: "40vw", md: 350 }, // responsive width for iPhone
+          minHeight: 350, // fixed height for all cards
+          transition: "0.3s",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-start",
+          "&:hover": {
+            transform: "scale(1.08)",
+            boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
+          },
+        }}
+      >
+        <CardMedia
+          component="img"
+          height={180} // fixed image height
+          sx={{ objectFit: "contain" }}
+          image={project.image}
+          alt={project.title}
+        />
+        <CardContent sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            sx={{ color: "#2d013bff", fontSize: { xs: "1rem", sm: "1.1rem" }, mb: 1 }}
           >
-            <Card
-              sx={{
-                width: { md: 350, xs: "100%", sm: "40vw" },
-                height: "50vh",
-                "&:hover": {
-                  transform: "scale(1.08)",
-                  boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
-                },
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="200"
-                sx={{ objectFit: "contain" }}
-                image={project.image}
-                alt={project.title}
-              />
-              <CardContent>
-                <Typography variant="h6" sx={{ color: "#2d013bff" }}>
-                  {project.title}
-                </Typography>
-                <Typography variant="body2" sx={{ color: "#2d013bff" }}>
-                  {project.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+            {project.title}
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: "#2d013bff", fontSize: { xs: "0.85rem", sm: "0.95rem" } }}
+          >
+            {project.description}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+  ))}
+</Grid>
+
     </Box>
   );
 };

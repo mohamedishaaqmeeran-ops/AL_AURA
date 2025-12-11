@@ -31,7 +31,7 @@ export default function Guarantee() {
   }, []);
 
   return (
-    <Box sx={{ mt: 10, mb: 10, px: { xs: 0, sm: 6, md: 12 }, textAlign: "center" }}>
+    <Box sx={{ mt: 10, mb: 10, px: { xs: 0, sm: 6, md: 12 }, textAlign: "center", overflowX:"hidden" }}>
       
       <Typography
         variant="h3"

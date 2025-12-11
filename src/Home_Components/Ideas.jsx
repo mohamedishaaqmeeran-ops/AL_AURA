@@ -37,7 +37,7 @@ function Ideas() {
   }, []);
 
   return (
-    <Box sx={{ mt: 10, mb: 10, px: { xs: 3, sm: 6, md: 12 } }}>
+    <Box sx={{ mt: 10, mb: 10, px: { xs: 3, sm: 6, md: 12 } , overflowX:"hidden"}}>
       <Typography
         variant="h3"  data-aos="fade-up"
         sx={{
@@ -63,7 +63,7 @@ function Ideas() {
       xl={6} 
       data-aos="fade-up"
     >
-      <Card sx={{ backgroundColor:  "rgba(228, 221, 3, 0.7)", borderRadius: 3, p: 2, height: {xs:268,sm:200} ,width:{lg:450,xs:"90%",sm:"54vw"},  backdropFilter: "blur(10px)", // blur effect
+      <Card sx={{ backgroundColor:  "rgba(228, 221, 3, 0.7)", borderRadius: 3, p: 2, height: {xs:"36vh",sm:200} ,width:{lg:450,xs:"90%",sm:"54vw"},  backdropFilter: "blur(10px)", // blur effect
                 borderRadius: 3,
                 transition: "transform 0.3s ease, box-shadow 0.3s ease",
                 "&:hover": {

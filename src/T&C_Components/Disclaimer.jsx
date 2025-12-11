@@ -8,7 +8,7 @@ function Disclaimer() {
     <>
       <Nav />
 
-      <Container maxWidth="md" sx={{ py: 5,mt:10 }}>
+      <Container maxWidth="md" sx={{ py: 5,mt:10, overflowX:"hidden" }}>
         <Typography
           variant="h3"
           gutterBottom

@@ -31,7 +31,7 @@ export default function FAQ() {
 
   return (
     <Box
-      sx={{ mt: 16, px: { xs: 0, sm: 6, md: 12 }, textAlign: "center" }}
+      sx={{ mt: 16, px: { xs: 0, sm: 6, md: 12 }, textAlign: "center", overflowX:"hidden" }}
       data-aos="fade-up"
     >
       <Typography

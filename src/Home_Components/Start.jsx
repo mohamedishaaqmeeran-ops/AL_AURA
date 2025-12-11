@@ -46,7 +46,7 @@ function Start() {
  
 
   return (
-    <Box sx={{ mt: { xs: 8 }, width: "100%", overflow: "hidden", position: "relative", pb: { xs: 5, sm: 5, md: 5 } }}>
+    <Box sx={{ mt: { xs: 8 }, width: "100%", overflowX:"hidden", position: "relative", pb: { xs: 5, sm: 5, md: 5 } }}>
       <Typography
         variant="h3"
         sx={{

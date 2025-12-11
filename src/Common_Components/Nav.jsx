@@ -24,7 +24,7 @@ import CallIcon from "@mui/icons-material/Call";
 
 const pages = [
   { title: "Home", icon: <HomeIcon fontSize="small" />, link: "/" },
-  { title: "About us", icon: <InfoIcon fontSize="small" />, link: "/AboutUS" },
+  { title: "About us", icon: <InfoIcon fontSize="small" />, link: "/Aboutus" },
   { title: "Services", icon: <BuildIcon fontSize="small" />, link: "/Services" },
   { title: "Portfolio", icon: <WorkIcon fontSize="small" />, link: "/Portfolio" },
   { title: "Contact us", icon: <CallIcon fontSize="small" />, link: "/Contactus" },
@@ -75,7 +75,7 @@ function Nav() {
           backdropFilter: "blur(12px)",
           borderBottom: "1px solid rgba(255, 255, 255, 0.13)",
           boxShadow: "0px 4px 20px rgba(0,0,0,0.45)",
-          transition: "all 0.3s ease-in-out",
+          transition: "all 0.3s ease-in-out", overflowX:"hidden"
         }}
       >
         <Container maxWidth="xl">

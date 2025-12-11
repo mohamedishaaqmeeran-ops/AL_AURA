@@ -8,7 +8,7 @@ function Privacy() {
     <>
       <Nav />
       
-      <Container maxWidth="md" sx={{ py: 5,mt:10,mb:10 }}>
+      <Container maxWidth="md" sx={{ py: 5,mt:10,mb:10, overflowX:"hidden" }}>
         <Typography variant="h3" gutterBottom sx={{fontWeight:700,background: "linear-gradient(90deg, #e4dd03, #9d00ff)", WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",fontFamily: "XBNiloofar"}}>
           Privacy Policy

@@ -12,6 +12,7 @@ import Whatsapp from './Whatsapp'
 import Contact from './Contact'
 import Privacy from './T&C_Components/Privacy'
 import Disclaimer from './T&C_Components/Disclaimer'
+import ScrollToTop from "./ScrollToTop";
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
     <>
        
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>} />
 

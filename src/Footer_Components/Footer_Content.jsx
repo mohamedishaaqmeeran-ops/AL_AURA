@@ -64,10 +64,10 @@ const Footer_Content = () => {
             <Typography variant="h6" mb={2} fontWeight="bold" textAlign={"left"}>Quick Links</Typography>
             {[
               { text: "Home", icon: <HomeIcon />, link: "/" },
-              { text: "About", icon: <InfoIcon />, link: "/about" },
-              { text: "Services", icon: <BuildIcon />, link: "/services" },
-              { text: "Portfolio", icon: <WorkIcon />, link: "/portfolio" },
-              { text: "Contact", icon: <PhoneIcon />, link: "/contactus" },
+              { text: "About", icon: <InfoIcon />, link: "/Aboutus" },
+              { text: "Services", icon: <BuildIcon />, link: "/Services" },
+              { text: "Portfolio", icon: <WorkIcon />, link: "/Portfolio" },
+              { text: "Contact", icon: <PhoneIcon />, link: "/Contactus" },
             ].map((item, i) => (
              <Link
   key={i}

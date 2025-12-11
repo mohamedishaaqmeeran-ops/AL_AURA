@@ -84,7 +84,7 @@ const Footer_Content = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" mb={2} fontWeight="bold">Customer Support</Typography>
             {[
-              { text: "alaura@gmail.com", icon: <EmailIcon />, href:"mailto:alaura@gmail.com" },
+              { text: "alaura.web@gmail.com", icon: <EmailIcon />, href:"mailto:alaura.web@gmail.com" },
               { text: "+91 95857 78929", icon: <PhoneIcon />,  href:"tel:+919585778929" },
           
             ].map((item, i) => (
@@ -116,20 +116,20 @@ const Footer_Content = () => {
 
         {/* Social Icons */}
         <Box display="flex" justifyContent="center" gap={2} mt={4}>
-          <IconButton component="a" href="https://instagram.com" target="_blank" sx={{ color: "#cb02adff", "&:hover":{color:"#fff"} }}>
+          <IconButton component="a" href="https://www.instagram.com/_al_aura_?igsh=MXVmZmNzemN1d21wMg==" target="_blank" sx={{ color: "#cb02adff", "&:hover":{color:"#fff"} }}>
             <InstagramIcon />
           </IconButton>
-          <IconButton component="a" href="https://facebook.com" target="_blank" sx={{ color: "#4813ceff", "&:hover":{color:"#fff"} }}>
+          <IconButton component="a" href="https://www.facebook.com/profile.php?id=61584851582666" target="_blank" sx={{ color: "#4813ceff", "&:hover":{color:"#fff"} }}>
             <FacebookIcon />
           </IconButton>
-          <IconButton component="a" href="https://linkedin.com" target="_blank" sx={{ color: "#0669ccff", "&:hover":{color:"#fff"} }}>
+          <IconButton component="a" href="https://www.linkedin.com/in/al-aura-al-aura-5547943a0?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" sx={{ color: "#0669ccff", "&:hover":{color:"#fff"} }}>
             <LinkedInIcon />
           </IconButton>
         </Box>
 
         {/* Copyright */}
         <Typography align="center" mt={3} sx={{ color: "#e4dd03", fontSize: { xs: 13, md: 15 } }}>
-          © {new Date().getFullYear()} Al-Aura. All rights reserved.
+          © {new Date().getFullYear()} AL-Aura. All rights reserved.
         </Typography>
       </Box>
     </Box>

@@ -37,7 +37,7 @@ export default function Choose() {
   }, []);
 
   return (
-    <Box sx={{ mt: 14, px: { xs: 3, sm: 6, md: 12 }, overflowX:"hidden" }} data-aos="fade-up">
+    <Box sx={{ mt: 14, px: { xs: 3, sm: 6, md: 12 } }} data-aos="fade-up">
       <Typography
         variant="h3"
         sx={{

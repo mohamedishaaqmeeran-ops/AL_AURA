@@ -31,7 +31,7 @@ const Footer_Content = () => {
     left: "50%",
     right: "50%",
     marginLeft: "-50vw",
-    marginRight: "-50vw", overflowX:"hidden"
+    marginRight: "-50vw", 
   }}
 >
 

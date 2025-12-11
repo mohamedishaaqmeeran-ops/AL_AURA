@@ -14,7 +14,7 @@ export default function About() {
   }, []);
 
   return (
-    <Container maxWidth="md" sx={{ mt: 5, mb: 5, overflowX:"hidden" }}>
+    <Container maxWidth="md" sx={{ mt: 5, mb: 5 }}>
 
       {/* Top Image */}
       <Box

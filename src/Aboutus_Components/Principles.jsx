@@ -36,7 +36,7 @@ export default function Principles() {
   }, []);
 
   return (
-    <Box sx={{ background: "#200428", py: 8, mb: 10, overflowX:"hidden" }}>
+    <Box sx={{ background: "#200428", py: 8, mb: 10 }}>
       <Container maxWidth="lg">
 
         {/* Heading */}
@@ -49,8 +49,7 @@ export default function Principles() {
             background: "linear-gradient(90deg, #e4dd03, #9d00ff)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            fontFamily: "XBNiloofar",
-            fontSize: { xs: 26, sm: 32, md: 40 },
+            fontFamily: "XBNiloofar"
           }}
           data-aos="fade-down"
         >
@@ -58,28 +57,22 @@ export default function Principles() {
         </Typography>
 
         {/* Cards */}
-        <Grid container spacing={{ xs: 5, md: 10 }} justifyContent="center">
+        <Grid container spacing={15} mt={10}>
           {principles.map((item, index) => (
             <Grid
               item
               xs={12}
-              sm={6}
               md={4}
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 150}
-              display="flex"
-              justifyContent="center"
             >
               <Paper
                 sx={{
-                  width: { xs: "90%", sm: "85%", md: "100%" },
-                  p: 4,
-                  minHeight: 220, // same height for all cards
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  borderRadius: 3,
+                  width: { xs: "85%", sm: "92.5%", md: "84vw", lg: "32.5vw", xl: "30vw" },
+                  p: 3,
+                  height: "100%",
+                  borderRadius: "18px",
                   background: "rgba(228, 221, 3, 0.7)",
                   backdropFilter: "blur(12px)",
                   transition: "0.35s",
@@ -89,10 +82,10 @@ export default function Principles() {
                   },
                 }}
               >
-                <Typography variant="h5" sx={{ fontWeight: 700, mb: 2, color: "#2d013bff" }}>
+                <Typography variant="h5" sx={{ fontWeight: 700, mb: 1, color: "#2d013bff" }}>
                   {item.title}
                 </Typography>
-                <Typography variant="body1" sx={{ lineHeight: 1.7, color: "#fff", flexGrow: 1 }}>
+                <Typography variant="body1" sx={{ lineHeight: 1.7, color: "#fff" }}>
                   {item.text}
                 </Typography>
               </Paper>

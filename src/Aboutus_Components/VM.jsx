@@ -13,7 +13,7 @@ export default function About() {
   }, []);
 
   return (
-    <Box sx={{ background: "#200428", py: 8 , overflowX:"hidden"}}>
+    <Box sx={{ background: "#200428", py: 8 }}>
       <Container maxWidth="lg">
         
         {/* Vision Heading */}

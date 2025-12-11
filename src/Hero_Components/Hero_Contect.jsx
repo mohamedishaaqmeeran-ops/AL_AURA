@@ -51,7 +51,7 @@ export default function MUICarousel() {
         width: "100vw",
         height: "100vh",
         bgcolor: "#2d013bff",
-         overflowX:"hidden",
+        
         position: "relative",
         ml: "calc(50% - 50vw)",
         mr: "calc(50% - 50vw)",

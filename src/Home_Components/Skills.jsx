@@ -47,7 +47,7 @@ export default function Skills() {
         overflow: "hidden",
         ml: "calc(50% - 50vw)",
         mr: "calc(50% - 50vw)",
-        width: "100vw", overflowX:"hidden"
+        width: "100vw", 
       }}
       data-aos="fade-up"
     >

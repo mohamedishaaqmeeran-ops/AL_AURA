@@ -39,7 +39,7 @@ export default function Newsletter() {
   return (
     <Box
       sx={{
-        mt: 14, overflowX:"hidden",
+        mt: 14, 
         textAlign: "center",
         px: { xs: 3, sm: 6, md: 12 },
         py: 8,

@@ -75,7 +75,7 @@ function Nav() {
           backdropFilter: "blur(12px)",
           borderBottom: "1px solid rgba(255, 255, 255, 0.13)",
           boxShadow: "0px 4px 20px rgba(0,0,0,0.45)",
-          transition: "all 0.3s ease-in-out", overflowX:"hidden"
+          transition: "all 0.3s ease-in-out",
         }}
       >
         <Container maxWidth="xl">

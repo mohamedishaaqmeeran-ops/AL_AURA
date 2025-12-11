@@ -37,7 +37,7 @@ function Ideas() {
   }, []);
 
   return (
-    <Box sx={{ mt: 10, mb: 10, px: { xs: 3, sm: 6, md: 12 } , overflowX:"hidden"}}>
+    <Box sx={{ mt: 10, mb: 10, px: { xs: 3, sm: 6, md: 12 } }}>
       <Typography
         variant="h3"  data-aos="fade-up"
         sx={{

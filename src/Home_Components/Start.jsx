@@ -62,66 +62,84 @@ function Start() {
         
       </Typography>
 
-      <Grid container spacing={{lg:10,sm:7.5,xs:8, md:12.5}} px={3} mt={10}>
-        {cards.map((item) => (
-          <Grid key={item.id} item xs={6} sm={6} md={3} xl={3} data-aos="fade-up">
-            <Card
-              sx={{
-                p: 3,
-                width: {lg:200,xs:"83%",sm:250,md:350},
-                bgcolor: "rgba(228, 221, 3, 0.7)", // semi-transparent purple
-                color: "#fff",
-                minHeight: 300,
-                backdropFilter: "blur(10px)", // blur effect
-                borderRadius: 3,
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
-                },
-              }}
-            >
-              <Box
-                sx={{
-                  width: 50,
-                  height: 50,
-                  mb: 2,
-                 mx:"auto",
-                  borderRadius: "50%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background: 'linear-gradient(0deg, #2d013bff, #c0c307ff)',
-                  color: "#000",
-                  fontSize: 24,
-                }}
-              >
-                {item.icon}
-              </Box>
+      <Grid container spacing={{ lg: 10, sm: 7.5, xs: 8, md: 12.5 }} px={3} mt={10}>
+  {cards.map((item) => (
+    <Grid
+      key={item.id}
+      item
+      xs={12} // make it full width on very small screens like iPhone
+      sm={6}
+      md={3}
+      xl={3}
+      data-aos="fade-up"
+      sx={{
+        display: "flex",
+        justifyContent: "center", // center card on iPhone
+      }}
+    >
+      <Card
+        sx={{
+          p: 3,
+          width: { lg: 200, sm: 250, md: 350, xs: "90%" }, // change xs width for iPhone
+          maxWidth: 350,
+          bgcolor: "rgba(228, 221, 3, 0.7)",
+          color: "#fff",
+          minHeight: 300,
+          backdropFilter: "blur(10px)",
+          borderRadius: 3,
+          transition: "transform 0.3s ease, box-shadow 0.3s ease",
+          "&:hover": {
+            transform: "scale(1.05)",
+            boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: 50,
+            height: 50,
+            mb: 2,
+            mx: "auto",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "linear-gradient(0deg, #2d013bff, #c0c307ff)",
+            color: "#000",
+            fontSize: 24,
+          }}
+        >
+          {item.icon}
+        </Box>
 
-              <CardContent sx={{ p: 0 }}>
-                <Typography
-                  variant="h6"
-                  fontWeight="bold"
-                  sx={{
-                    mb: 1,
-                    background: "#2d013bff",
-                    backgroundClip: 'text',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                  }}
-                >
-                  {item.title}
-                </Typography>
+        <CardContent sx={{ p: 0 }}>
+          <Typography
+            variant="h6"
+            fontWeight="bold"
+            sx={{
+              mb: 1,
+              background: "#2d013bff",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              textAlign: "center", // center title on small screens
+            }}
+          >
+            {item.title}
+          </Typography>
 
-                <Typography variant="body2" sx={{ whiteSpace: "pre-line", fontSize: 15, color: "#fff" }}>
-                  {item.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+          <Typography
+            variant="body2"
+            sx={{ whiteSpace: "pre-line", fontSize: 15, color: "#fff", textAlign: "center" }}
+          >
+            {item.description}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Grid>
+  ))}
+</Grid>
+
     </Box>
   );
 }

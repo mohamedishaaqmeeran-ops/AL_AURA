@@ -55,78 +55,85 @@ export default function Choose() {
         Why Clients Prefer Working With Me
       </Typography>
 
-      <Stack spacing={6} sx={{ position: "relative", mt: 10 }}>
-        {reasons.map((r, i) => (
-          <Box
-            key={i}
-            sx={{
-              display: "flex",
-              gap: 3,
-              alignItems: "flex-start",
-              position: "relative",
-            }}
-            data-aos="fade-up"
-            data-aos-delay={150 + i * 150}
-          >
-            {/* Timeline vertical line */}
-            <Box
-              sx={{
-                position: "absolute",
-                left: 26,
-                top: 0,
-                bottom: i !== reasons.length - 1 ? "-48px" : "0",
-                width: "2px",
-                background: i !== reasons.length - 1 ? "#c0c307ff" : "transparent",
-              }}
-            />
+     <Stack spacing={6} sx={{ position: "relative", mt: 10 }}>
+  {reasons.map((r, i) => (
+    <Box
+      key={i}
+      sx={{
+        display: "flex",
+        gap: 3,
+        alignItems: "flex-start",
+        position: "relative",
+        flexDirection: { xs: "column", sm: "row" }, // stack vertically on iPhone
+        alignItems: { xs: "center", sm: "flex-start" },
+      }}
+      data-aos="fade-up"
+      data-aos-delay={150 + i * 150}
+    >
+      {/* Timeline vertical line */}
+      <Box
+        sx={{
+          position: "absolute",
+          left: { xs: "50%", sm: 26 }, // center line on iPhone
+          top: 0,
+          bottom: i !== reasons.length - 1 ? "-48px" : "0",
+          width: "2px",
+          background: i !== reasons.length - 1 ? "#c0c307ff" : "transparent",
+          transform: { xs: "translateX(-50%)", sm: "none" }, // center line properly
+        }}
+      />
 
-            {/* Icon circle */}
-            <Box
-              sx={{
-                zIndex: 20,
-                minWidth: 52,
-                height: 52,
-                borderRadius: "50%",
-                background: "#c0c307ff",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                color: "#2d013bff",
-                boxShadow: "0 0 12px rgba(228,221,3,0.6)",
-                transition: "0.3s",
-                "&:hover": {
-                  transform: "scale(1.12)",
-                  boxShadow: "0 0 18px rgba(228,221,3,0.9)",
-                },
-              }}
-            >
-              {r.icon}
-            </Box>
+      {/* Icon circle */}
+      <Box
+        sx={{
+          zIndex: 20,
+          minWidth: 52,
+          height: 52,
+          borderRadius: "50%",
+          background: "#c0c307ff",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#2d013bff",
+          boxShadow: "0 0 12px rgba(228,221,3,0.6)",
+          transition: "0.3s",
+          "&:hover": {
+            transform: "scale(1.12)",
+            boxShadow: "0 0 18px rgba(228,221,3,0.9)",
+          },
+          mb: { xs: 2, sm: 0 }, // spacing below icon on iPhone
+        }}
+      >
+        {r.icon}
+      </Box>
 
-            {/* Text */}
-            <Box
-              sx={{
-                background: "rgba(228, 221, 3, 0.7)",
-                border: "1px solid rgba(228,221,3,0.2)",
-                p: 3,
-                borderRadius: 3,
-                flex: 1,
-                backdropFilter: "blur(6px)",
-                transition: "0.3s",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                  boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
-                },
-              }}
-            >
-              <Typography variant="h6" sx={{ color: "#2d013bff", fontWeight: "bold", mb: 1 }}>
-                {r.title}
-              </Typography>
-              <Typography sx={{ color: "#fff" }}>{r.desc}</Typography>
-            </Box>
-          </Box>
-        ))}
-      </Stack>
+      {/* Text */}
+      <Box
+        sx={{
+          background: "rgba(228, 221, 3, 0.7)",
+          border: "1px solid rgba(228,221,3,0.2)",
+          p: 3,
+          borderRadius: 3,
+          flex: 1,
+          backdropFilter: "blur(6px)",
+          transition: "0.3s",
+          textAlign: { xs: "center", sm: "left" }, // center text on iPhone
+          width: { xs: "90%", sm: "auto" }, // make text box narrower on iPhone
+          "&:hover": {
+            transform: "scale(1.02)",
+            boxShadow: "0 10px 25px rgba(192, 195, 7, 0.3)",
+          },
+        }}
+      >
+        <Typography variant="h6" sx={{ color: "#2d013bff", fontWeight: "bold", mb: 1 }}>
+          {r.title}
+        </Typography>
+        <Typography sx={{ color: "#fff" }}>{r.desc}</Typography>
+      </Box>
+    </Box>
+  ))}
+</Stack>
+
     </Box>
   );
 }

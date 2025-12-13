@@ -10,11 +10,11 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 // carousel images
-import img1 from "../assets/c1.jpg";
-import img2 from "../assets/c2.jpg";
-import img3 from "../assets/c3.jpg";
-
-const images = [img1, img2, img3];
+import img1 from "../assets/C1.jpg";
+import img2 from "../assets/C2.jpg";
+import img3 from "../assets/C3.jpg";
+import img4 from "../assets/C4.jpg";
+const images = [img1, img2, img3, img4];
 
 // 🔴 REPLACE with your Google Form action URL
 const GOOGLE_FORM_URL =

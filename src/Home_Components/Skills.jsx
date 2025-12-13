@@ -41,7 +41,7 @@ export default function Skills() {
 
   return (
     <Box
-      sx={{
+      sx={{display:{xs:"none",sm:"block"},
         mt: 10,
         mb: 10,
         overflow: "hidden",

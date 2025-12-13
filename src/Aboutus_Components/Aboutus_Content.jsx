@@ -23,14 +23,13 @@ export default function About() {
         alt="Al Aura Freelance Work"
         data-aos="fade-down"
         sx={{
-          width: "100vw",
-          height: "768px",
+          width: "100%",
+          height: {sm:"100vh",xs:"auto"},
           borderRadius: 2,
           mb: 4,
           mt: -1,
-          ml: "calc(50% - 50vw)",
-          mr: "calc(50% - 50vw)",
-          objectFit: "cover",
+        
+          objectFit: {sm:"cover",xs:"contain"},
           boxShadow: 3,
         }}
       />
@@ -56,7 +55,7 @@ export default function About() {
       <Typography
         variant="body1"
         paragraph
-        sx={{ fontSize: 20 }}
+        sx={{ fontSize: 18 }}
         data-aos="fade-up"
         data-aos-delay="100"
       >
@@ -69,7 +68,7 @@ export default function About() {
       <Typography
         variant="body1"
         paragraph
-        sx={{ fontSize: 20 }}
+        sx={{ fontSize: 18 }}
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -81,7 +80,7 @@ export default function About() {
       <Typography
         variant="body1"
         paragraph
-        sx={{ fontSize: 20 }}
+        sx={{ fontSize: 18 }}
         data-aos="fade-up"
         data-aos-delay="300"
       >

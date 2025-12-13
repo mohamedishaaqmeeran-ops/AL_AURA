@@ -20,6 +20,7 @@ function Home() {
       <Ideas/>
       <Skills/>
       <Skill/>
+      <Choose/>
       <Guarantee/>
       <FAQ/>
       <Newsletter/>
